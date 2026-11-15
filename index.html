@@ -1,11 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SOCY100 — Contemporary Perspectives</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>INIT Commit</h1>
+  <nav>
+    <div class="container">
+      <b><a href="index.html">SOCY100 <i>/</i> MY NOTES</a></b>
+      <div class="nav-links">
+        <a href="index.html" class="active">Overview</a>
+        <a href="macro.html">Macro &amp; Micro</a>
+        <a href="symbolic.html">Interactionism</a>
+        <a href="goffman.html">Goffman</a>
+        <a href="bourdieu.html">Bourdieu</a>
+        <a href="terms.html">Terms</a>
+        <a href="quiz.html">Quiz</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="slide on" style="--g:0">
+      <img src="img/hamnet.jpg" alt="Theatre stage" onerror="this.style.display='none'">
+    </div>
+    <div class="slide" style="--g:1">
+      <img src="img/money.jpg" alt="Forms of capital" onerror="this.style.display='none'">
+    </div>
+    <div class="slide" style="--g:2">
+      <img src="img/masks.jpg" alt="Dramaturgy masks" onerror="this.style.display='none'">
+    </div>
+    <div class="ov">
+      <div class="container">
+        <div class="kick">SOCY 100 · LECTURE NOTES</div>
+        <h1>Contemporary Perspectives: <em>Bridging Macro &amp; Micro Sociology</em></h1>
+      </div>
+    </div>
+    <div class="dots" id="dots"></div>
+  </header>
+
+  <main class="container">
+    <section id="people">
+      <div class="sec-n">THE PEOPLE</div>
+      <h2>Who’s who</h2>
+      <div class="strip-wrap">
+        <button class="arr l" aria-label="Previous">‹</button>
+        <div class="strip" id="strip">
+          <div class="person">
+            <div class="av">MA</div><b>Marx</b>
+            <div class="yr">1840s - 1920s</div>
+            <p>materialist conception of history of the entire human history</p>
+            <img src="img/marx.webp" alt="Karl Marx" onerror="this.style.display='none'">
+          </div>
+          <div class="person">
+            <div class="av">DU</div><b>Durkheim</b>
+            <div class="yr">1840s - 1920s</div>
+            <p>Suicide across several major countries</p>
+            <img src="img/durkheim.webp" alt="Emile Durkheim" onerror="this.style.display='none'">
+          </div>
+          <div class="person">
+            <div class="av">WE</div><b>Weber</b>
+            <div class="yr">1840s - 1920s</div>
+            <p>there is stratification in the 3 PPP’s</p>
+            <img src="img/weber.webp" alt="Max Weber" onerror="this.style.display='none'">
+          </div>
+          <div class="person">
+            <div class="av">ME</div><b>Mead</b>
+            <div class="yr">1930s - 1960s</div>
+            <p>Symbolic Interactionism</p>
+            <img src="img/mead.webp" alt="George Herbert Mead" onerror="this.style.display='none'">
+          </div>
+          <div class="person">
+            <div class="av">BL</div><b>Blumer</b>
+            <div class="yr">1930s - 1960s</div>
+            <p>Coined the term symbolic interactionism</p>
+            <img src="img/blumer.webp" alt="Herbert Blumer" onerror="this.style.display='none'">
+          </div>
+          <div class="person">
+            <div class="av">GO</div><b>Goffman</b>
+            <div class="yr">1930s - 1960s</div>
+            <p>The dramaturgical approach</p>
+            <img src="img/goffman.webp" alt="Erving Goffman" onerror="this.style.display='none'">
+          </div>
+          <div class="person">
+            <div class="av">CO</div><b>Cooley</b>
+            <div class="yr">Looking-glass self</div>
+            <p>imagine how others perceive us</p>
+            <img src="img/cooley.webp" alt="Charles Horton Cooley" onerror="this.style.display='none'">
+          </div>
+          <div class="person">
+            <div class="av">BO</div><b>Bourdieu</b>
+            <div class="yr">1970s - 2000s</div>
+            <p>Habitus, field and 4 types of capital</p>
+            <img src="img/bourdieu.webp" alt="Pierre Bourdieu" onerror="this.style.display='none'">
+          </div>
+          <div class="person">
+            <div class="av">DS</div><b>Dorothy E. Smith</b>
+            <div class="yr">1970s - present</div>
+            <p>Interventions</p>
+            <img src="img/e smith.gif" alt="Dorothy E. Smith" onerror="this.style.display='none'">
+          </div>
+          <div class="person">
+            <div class="av">PC</div><b>Patricia Hill Collins</b>
+            <div class="yr">1970s - present</div>
+            <p>Interventions</p>
+            <img src="img/collins.webp" alt="Patricia Hill Collins" onerror="this.style.display='none'">
+          </div>
+        </div>
+        <button class="arr r" aria-label="Next">›</button>
+      </div>
+    </section>
+
+    <section>
+      <div class="sec-n">01 · TIMELINE</div>
+      <h2>Timeline of sociological perspectives</h2>
+      <div class="tl">
+        <div class="card ac">
+          <div class="yr">1840s - 1920s</div><b>Classical Sociology</b>
+          <ul>
+            <li>Marx</li>
+            <li>Durkheim</li>
+            <li>Weber</li>
+          </ul>
+        </div>
+        <div class="card bc">
+          <div class="yr">1930s - 1960s</div><b>Symbolic Interactionism</b>
+          <ul>
+            <li>Mead</li>
+            <li>Blumer</li>
+            <li>Goffman</li>
+          </ul>
+        </div>
+        <div class="card cc">
+          <div class="yr">1970s - 2000s</div><b>Contemporary Social Theory</b>
+          <ul>
+            <li>Bourdieu</li>
+          </ul>
+        </div>
+        <div class="card ac">
+          <div class="yr">1970s - present</div><b>Interventions</b>
+          <ul>
+            <li>Dorothy E. Smith</li>
+            <li>Patricia Hill Collins</li>
+            <li>Linda Tuhiwai Smith</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="page-nav">
+      <span></span>
+      <a href="macro.html">Next: 02 Macro &amp; Micro →</a>
+    </div>
+  </main>
+
+  <footer>SOCY100 / CONTEMPORARY PERSPECTIVES</footer>
+  <script src="script.js"></script>
 </body>
 </html>
