@@ -257,11 +257,15 @@ mark {
 .card.bc {
   background: #e9e3ce;
   border-left: 4px solid var(--navy);
+  box-shadow: 5px 1px 15px 1px #888888; /* Outer shadow */
+
 }
 
 .card.cc {
   background: #ded8c1;
   border-left: 4px solid #57735c;
+  box-shadow: 5px 1px 15px 1px #888888; /* Outer shadow */
+
 }
 
 .quote {
