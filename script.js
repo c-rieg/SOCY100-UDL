@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. Hero Slideshow (runs only on index.html)
   const slides = document.querySelectorAll(".slide");
   const dotsBox = document.getElementById("dots");
   if (slides.length && dotsBox) {
@@ -23,7 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(() => showSlide(idx + 1), 5000);
   }
 
-  // 2. Who's Who Carousel Buttons (runs only on index.html)
   const strip = document.getElementById("strip");
   const prevBtn = document.querySelector(".arr.l");
   const nextBtn = document.querySelector(".arr.r");
@@ -32,7 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
     nextBtn.addEventListener("click", () => strip.scrollBy({ left: 240, behavior: "smooth" }));
   }
 
-  // 3. Bourdieu Four Forms of Capital Tabs (runs only on bourdieu.html)
   const tabWrap = document.getElementById("tabs");
   if (tabWrap) {
     const buttons = tabWrap.querySelectorAll("button");
@@ -47,7 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 4. Quiz Logic (runs only on quiz.html)
   const qEl = document.getElementById("q");
   if (qEl) {
     const questions = [
@@ -89,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
           "By keeping front stage and back stage separate"
         ],
         ans: 1,
-        why: "Habitus connects macro social structures to micro everyday practices—and our actions can reproduce or transform structures."
+        why: "Habitus connects macro social structures to micro everyday practices-and our actions can reproduce or transform structures."
       },
       {
         q: "Accents, posture, tastes, and skills that become a permanent part of your mind and body are which state of cultural capital?",
@@ -112,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
           "Practice, Performance, Perception"
         ],
         ans: 1,
-        why: "Weber's three dimensions of stratification are Property (class), Prestige (status), and Power (party)."
+        why: "Weber's three dimensions of stratification are Paper (class), Prestige (status), and Power (party)."
       }
     ];
 
